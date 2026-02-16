@@ -191,8 +191,14 @@ git log --oneline --graph --all
 ### Output
 
 ```text
-* f4141ed (feature/a) created conflict.txt , commiting on feature/a
+* f4141ed (HEAD -> feature/a) created conflict.txt , commiting on feature/a
 * 1579abd (feature/b) Conflict created
+* 24615ff Feature B: Updated Assignment-3.md
+| *   055a40a (refs/stash) On main: WIP: assignment 03 docs
+|/|\  
+| | * 25e5d1e untracked files on main: 13b649e Added docs folder
+| * 95c4a67 index on main: 13b649e Added docs folder
+|/  
 * 13b649e (main) Added docs folder
 ```
 
@@ -222,8 +228,7 @@ At this point:
 
 * The commit was identifiable via reflog
 * Git correctly prevented accidental data loss
-* Recovery path was available via `--continue`, `--skip`, or `--abort`
-
+* Recovery path was available via `--continue`
 This satisfied the **commit recovery requirement** of the assignment.
 
 
@@ -238,6 +243,7 @@ This assignment demonstrated:
 * Manual conflict resolution with intent preservation
 * Understanding of Git’s internal state during rebase and cherry-pick
 * Ability to recover work using Git history tools
+
 
 
 
