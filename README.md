@@ -74,19 +74,6 @@ This ensured:
 - Short explanation of the branch strategy used
 
 ---
-
-## Issues Encountered & Resolutions
-
-- **Untracked files blocking branch checkout**  
-  → Resolved by understanding how Git handles untracked working tree files
-
-- **Conflicts appearing despite clean file view**  
-  → Identified that Git tracks conflict state separately from file content
-
-- **Dropped commit during rebase/cherry-pick**  
-  → Successfully recovered using reflog
-
-
 ## Conclusion
 
 This assignment reinforced disciplined Git workflows by simulating realistic failure and recovery situations.  
